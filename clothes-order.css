@@ -1,0 +1,130 @@
+body {
+  background-color: rgb(212, 227, 235);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  background: rgb(255, 253, 250);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 253, 250);
+  width: 400px;
+
+  /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+
+  min-height: 200px;
+  width: 50vw;
+  margin: 100px auto; */
+}
+
+input,
+select {
+  border: 0px;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+  margin: 10px;
+}
+div {
+  margin: 10px;
+}
+
+.start {
+  border-bottom: 3px solid rgb(212, 227, 235);
+}
+
+#amount {
+  width: 100px;
+}
+
+section#bottom {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* #order {
+  /* background-color: rgb(222, 222, 222);
+  width: 300px;
+  border: 2px solid;
+  color: rgb(35, 35, 35); }
+*/
+
+li {
+  padding: 1px;
+}
+
+#menu {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 5px 10px 30px;
+  text-align: center;
+  width: 30px;
+}
+
+hr {
+  border: 1px dashed;
+}
+
+button {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  background-color: rgb(212, 227, 235);
+  width: 100px;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+button.del {
+  background-color: rgb(235, 212, 212);
+  border: 2px solid rgb(142, 0, 0);
+}
+
+hr {
+  border: 3px dashed rgb(212, 227, 235);
+}
+
+.toast {
+  display: none;
+}
+.toast-success {
+  background-color: rgb(192, 255, 234);
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid rgb(72, 186, 148);
+  color: rgb(38, 98, 78);
+  width: 310px;
+  border-radius: 3px;
+}
+.toast-error {
+  background-color: rgb(255, 192, 192);
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid rgb(186, 72, 72);
+  color: rgb(98, 38, 38);
+  width: 180px;
+  border-radius: 3px;
+}

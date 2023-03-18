@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="wide:device-width initial-scale:1.0">
+        <meta charset="UTF-8">
+        <title>衣服工廠</title>
+        <link rel="stylesheet" type="text/css" href="./clothes-order.css"/>
+        <script src="./clothes-order.js"></script>
+    </head>
+    <body>
+        <main>
+            <section id="top">            
+                <h1>歡迎光臨衣服工廠</h1>
+            </section>
+
+            <section id="middle">           
+                <div>
+                    <label class="start">&nbsp&nbsp&nbsp訂購人：
+                        <input id="name" text="text" placeholder="請輸入名字"/>
+                    </label>
+                </div>
+                <div class="start">&nbsp&nbsp&nbsp服裝分類：
+                    <select id="category">
+                        <option value="none" selected disable hidden>選擇服裝分類</option>
+                        <option value="men">男裝</option> 
+                        <option value="women">女裝</option>
+                    </select>
+                    <select id="type" >
+                        <option value="none" selected disabled hidden>選擇服裝類型</option>
+                        <option value="jackets">外套</option> 
+                        <option value="tops">上衣</option>
+                        <option value="bottoms">下身</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="start">&nbsp&nbsp&nbsp訂購數量：
+                        <input id="amount" type="number" min="0" max="10000" placeholder="請選擇數量"/>
+                    </label>
+                </div>
+                <div class="btn">
+                    <button onclick="order()" class="order">我要訂購</button>
+                    <!-- <button onclick="industry()" class="industry">認識工廠</button> -->
+                    <button onclick="del()" class="del">重新選購</button>
+                </div>
+            </section>
+            <hr/>
+            <section id="bottom">
+
+                    <p id="menu">我的訂單</p>
+                    <ul >
+                        <li><span>顧客姓名：</span><span id="your_name"></span></li>
+                        <li><span>服裝分類：</span><span id="your_category"></span></li>
+                        <li><span>服裝類型：</span><span id="your_type"></span></li>
+                        <li><span>訂購數量：</span><span id="your_amount"></span></li>
+                        <li><span>建議售價：</span><span id="your_cost"></span></li>
+                        <li class="totalCost"><span>限時特價：</span><span id="your_totalCost"></span></li>
+                    <ul>
+            </section>
+            <section>
+                <div class="toast toast-success">
+                    訂購成功！可以查看我的訂單確認明細！
+                </div>
+                <div class="toast toast-error">
+                    訂單已刪除！請重新選擇
+                </div>
+            </section>
+
+        </main>
+
+
+    </body>
+</html>
