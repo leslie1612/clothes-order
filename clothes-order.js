@@ -39,7 +39,7 @@ function order() {
           document.getElementById("your_amount").textContent = amount;
           if (category_text == category[1].text) {
             alert("最近剛好是工廠週年慶，只要您今天下單，男裝一律打8折！");
-            toastSuccess();
+            // toastSuccess();
             document.getElementById("your_cost").textContent =
               price_men + " = " + total_men;
             document.getElementById("your_totalCost").textContent =
@@ -48,7 +48,7 @@ function order() {
             discount.style.fontWeight = "600";
           } else {
             alert("最近剛好是工廠週年慶，只要您今天下單，女裝一律打75折！");
-            toastSuccess();
+            // toastSuccess();
             document.getElementById("your_cost").textContent =
               price_women + " = " + total_women;
             document.getElementById("your_totalCost").textContent =
@@ -93,7 +93,7 @@ function del() {
   document.getElementById("category").value = "none";
   document.getElementById("type").value = "none";
   document.getElementById("amount").value = "";
-  toastError();
+  // toastError();
 }
 
 function toastSuccess() {
